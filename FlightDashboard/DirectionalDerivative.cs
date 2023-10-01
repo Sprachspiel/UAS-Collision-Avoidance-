@@ -12,11 +12,11 @@
         for (int i = 1; i < ft.Count; i++)
         {
             aero[I].DirectionalDerivative = Math.Acos(Math.Cos(aero[I].INC
-                - aero[I - 1].INC)
-                - (Math.Sin(aero[I - 1].INC)
-                * Math.Sin(aero[I].INC))
-                * (1 - Math.Cos(aero[I].AZI
-                - aero[I - 1].AZI)));
+                - aero[i - 1].INC)
+                - (Math.Sin(aero[i - 1].INC)
+                * Math.Sin(aero[i].INC))
+                * (1 - Math.Cos(aero[i].AZI
+                - aero[i - 1].AZI)));
         }
     }
 }
