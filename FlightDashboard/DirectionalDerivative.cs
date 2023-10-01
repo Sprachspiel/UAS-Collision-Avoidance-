@@ -11,7 +11,7 @@
         var aero = await flightData.GetFlightData();
         for (int i = 1; i < ft.Count; i++)
         {
-            aero[I].DirectionalDerivative = Math.Acos(Math.Cos(aero[I].INC
+            aero[I].DirectionalDerivative = Math.Acos(Math.Cos(aero[i].INC
                 - aero[i - 1].INC)
                 - (Math.Sin(aero[i - 1].INC)
                 * Math.Sin(aero[i].INC))
